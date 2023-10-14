@@ -10,23 +10,23 @@ Learn Python by building a wide range of exciting projects, from automation scri
 ## What I've Learned 🧠
 Professional Python Programming: I've honed my skills to program in Python professionally, equipping me for a wide range of tasks in the world of software development, using Python 3 - the latest version of Python.
 
-- Automation: I've learned how to automate tasks, making repetitive processes more efficient and allowing me to focus on more important aspects of my work. This includes Python Scripting and Automation.
+- **Automation:** I've learned how to automate tasks, making repetitive processes more efficient and allowing me to focus on more important aspects of my work. This includes Python Scripting and Automation.
 
-Game Development: I've delved into the world of game development, creating fun and engaging games like Blackjack, Pong, and Snake using Python.
+- **Game Development:** I've delved into the world of game development, creating fun and engaging games like Blackjack, Pong, and Snake using Python.
 
-Web Scraping: I've explored web scraping techniques with tools like Beautiful Soup, Selenium Web Driver, and Request, allowing me to extract data from websites.
+- **Web Scraping:** I've explored web scraping techniques with tools like Beautiful Soup, Selenium Web Driver, and Request, allowing me to extract data from websites.
 
-Data Science and Visualization: Python has become my go-to language for data science and visualization, with libraries like Pandas, NumPy, Matplotlib, Plotly, and Scikit-learn at my disposal.
+- **Data Science and Visualization:** Python has become my go-to language for data science and visualization, with libraries like Pandas, NumPy, Matplotlib, Plotly, and Scikit-learn at my disposal.
 
-Python GUI Desktop App Development: I've built graphical user interfaces (GUIs) using Tkinter, enabling me to create desktop applications.
+- **Python GUI Desktop App Development:** I've built graphical user interfaces (GUIs) using Tkinter, enabling me to create desktop applications.
 
-Front-End Web Development: I've ventured into front-end web development, mastering technologies like HTML5, CSS3, and Bootstrap 4 to create engaging web interfaces.
+- **Front-End Web Development:** I've ventured into front-end web development, mastering technologies like HTML5, CSS3, and Bootstrap 4 to create engaging web interfaces.
 
-Version Control: I've learned to manage code efficiently with Git, GitHub, and version control best practices.
+- **Version Control:** I've learned to manage code efficiently with Git, GitHub, and version control best practices.
 
-Backend Web Development: I've delved into backend web development, working with Flask, REST, and APIs, along with database management using SQL, including SQLite and PostgreSQL.
+- **Backend Web Development:** I've delved into backend web development, working with Flask, REST, and APIs, along with database management using SQL, including SQLite and PostgreSQL.
 
-Web Design and Deployment: I've gained valuable insights into web design and deployment using platforms like GitHub Pages, Heroku, and GUnicorn.
+- **Web Design and Deployment:** I've gained valuable insights into web design and deployment using platforms like GitHub Pages, Heroku, and GUnicorn.
 
 And much more!
 
