@@ -1,5 +1,7 @@
 # Python Programming Mastery 🐍 - 100 Projects in 100 Days 🚀
 
+![]([https://github.com/Your_Repository_Name/Your_GIF_Name.gif](https://github.com/shayanrsh/100DaysOfCode/blob/main/giphy.gif))
+
 Welcome to my Python programming journey! In this repository, you'll find a collection of 100 unique Python projects that I've built over 100 days as part of my Python programming course. This repository showcases my commitment to mastering Python and the diverse set of skills I've acquired throughout the course.
 
 ## 📚 Course Overview:
