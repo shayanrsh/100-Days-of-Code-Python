@@ -58,22 +58,28 @@
 #Hint 13: Create a function called compare() and pass in the user_score and computer_score. If the computer and user both have the same score, then it's a draw. If the computer has a blackjack (0), then the user loses. If the user has a blackjack (0), then the user wins. If the user_score is over 21, then the user loses. If the computer_score is over 21, then the computer loses. If none of the above, then the player with the highest score wins.
 
 #Hint 14: Ask the user if they want to restart the game. If they answer yes, clear the console and start a new game of blackjack and show the logo from art.py.
+
 from art import logo
 import random
+import os
 
-def is_ace(hand):
+def score_and_isAce(hand):
   score = sum(hand)
   if (11 in hand) and score > 21:
-    score -= 10
+    hand.remove(11)
+    hand.append(1)
+    score = sum(hand)
   return score
 
 def win_or_lose(user_score, computer_score):
   if user_score > 21:
-    print("You lose.")
+    print("You went over. You lose. 😤")
+  elif computer_score > 21:
+    print("Opponent went over. You win 😁")
   elif user_score > computer_score:
-    print("You win.")
+    print("You win. 😃")
   elif user_score < computer_score:
-    print("You lose.")
+    print("You lose. 😤")
   else:
     print("Draw")
 
@@ -86,27 +92,28 @@ def blackjack_game():
   want_play = True
   if input("Do you want to play a game of Blackjack? Type 'y' or 'n': ").lower() == 'n':
     want_play = False
-  
+
   while want_play:
+    os.system('cls')
     print(logo)
   
     cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
     
     user_cards = random.sample(cards, 2)
-    user_score = is_ace(user_cards)
+    user_score = score_and_isAce(user_cards)
     print(f"Your cards: {user_cards}, current score: {user_score}")
-    computer_cards.append(random.choice(cards))
-    print(f"Computer's first card: {computer_cards}")
+    computer_cards = random.sample(cards, 2)
+    computer_score = score_and_isAce(computer_cards)
+    print(f"Computer's first card: {[computer_cards[0]]}")
 
-    
+
     want_new_card = input("Type 'y' to get another card, type 'n' to pass: ").lower()
     
     if want_new_card == 'n':
       
-      computer_cards.append(random.choice(cards))
-      
-      user_score = is_ace(user_cards)
-      computer_score = is_ace(computer_cards)
+      while computer_score < 21 and computer_score <= user_score:
+        computer_cards.append(random.choice(cards))
+        computer_score = score_and_isAce(computer_cards)
       
       print(f"Your final hand: {user_cards}, final score: {user_score}")
       print(f"Computer's final hand: {computer_cards}, final score: {computer_score}")
