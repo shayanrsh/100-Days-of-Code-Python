@@ -2,13 +2,13 @@
 
 Welcome to my Python programming journey! In this repository, you'll find a collection of 100 unique Python projects that I've built over 100 days as part of my Python programming course. This repository showcases my commitment to mastering Python and the diverse set of skills I've acquired throughout the course.
 
-📚 Course Overview:
+## 📚 Course Overview:
 Learn Python by building a wide range of exciting projects, from automation scripts to fun games, web applications, data science, and machine learning. This course is an exhilarating Python adventure, designed to turn you into a professional Python programmer.
 
-What I've Learned 🧠
+## What I've Learned 🧠
 Professional Python Programming: I've honed my skills to program in Python professionally, equipping me for a wide range of tasks in the world of software development, using Python 3 - the latest version of Python.
 
-Automation: I've learned how to automate tasks, making repetitive processes more efficient and allowing me to focus on more important aspects of my work. This includes Python Scripting and Automation.
+. Automation: I've learned how to automate tasks, making repetitive processes more efficient and allowing me to focus on more important aspects of my work. This includes Python Scripting and Automation.
 
 Game Development: I've delved into the world of game development, creating fun and engaging games like Blackjack, Pong, and Snake using Python.
 
