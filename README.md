@@ -1,4 +1,4 @@
-# Python Programming Mastery 🐍 - 100 Projects in 100 Days 🚀
+# 100 Days of Code: The Complete Python Pro Bootcamp for 2023 🐍
 
 ![](https://github.com/shayanrsh/100DaysOfCode/blob/main/giphy.gif)
 
