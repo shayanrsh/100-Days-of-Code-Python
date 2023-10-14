@@ -1,0 +1,51 @@
+from art import logo, vs
+from game_data import data
+import os
+import random
+
+score = 0
+is_lost = False
+
+def choose_person(data):
+    random_choice = random.choice(data)
+    name = random_choice["name"]
+    follower_count = random_choice["follower_count"]
+    description = random_choice["description"]
+    country = random_choice["country"]
+    data.remove(random_choice)
+    return name, follower_count, description, country
+
+
+def guess_checker(follower_count, follower_count2, user_guess, name, name2, description, description2, country, country2, score):
+    if follower_count - follower_count2 > 0 and user_guess == "a":
+        score += 1
+        name, follower_count, description, country = name2, follower_count2, description2, country2
+    elif follower_count - follower_count2 < 0 and user_guess == "b":
+        score += 1
+        name, follower_count, description, country = name2, follower_count2, description2, country2
+    else:
+        print(f"Sorry, that's wrong. Final score: {score}")
+        global is_lost
+        is_lost = True
+    return score, name, follower_count, description, country
+    
+
+def game(score, name, follower_count, description, country):
+    print(logo)
+    if score != 0:
+        print(f"You're right! Current score: {score}")
+    print(f"Compare A: {name}, a {description}, from {country}")
+    print(vs)
+    name2, follower_count2, description2, country2 = choose_person(data)
+    print(f"Compare B: {name2}, a {description2}, from {country2}")
+
+    user_guess = input("Who has more followers? Type 'A' or 'B': ").lower()
+    score, name, follower_count, description, country = guess_checker(follower_count, follower_count2, user_guess, name, name2, description, description2, country, country2, score)
+    return score, name, follower_count, description, country
+
+name, follower_count, description, country = choose_person(data)
+
+while not is_lost:
+    os.system('cls')
+    score, name, follower_count, description, country = game(score, name, follower_count, description, country)
+    

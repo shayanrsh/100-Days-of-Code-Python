@@ -1,0 +1,9 @@
+def salam(hi, ok):
+    hi += 1
+    ok += 5
+    return hi, ok
+
+hi = 0
+ok = 2
+
+print(salam(hi, ok))
