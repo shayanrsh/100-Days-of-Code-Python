@@ -71,8 +71,12 @@ def score_and_isAce(hand):
     score = sum(hand)
   return score
 
-def win_or_lose(user_score, computer_score):
-  if user_score > 21:
+def win_or_lose(user_score, computer_score, user_cards, computer_cards):
+  if computer_score == 21 and len(computer_cards) == 2:
+    print("Opponent has a Blackjack. You lose. 😤")
+  elif user_score == 21 and len(user_cards) == 2:
+    print("You have a Blackjack. You win. 😁")
+  elif user_score > 21:
     print("You went over. You lose. 😤")
   elif computer_score > 21:
     print("Opponent went over. You win 😁")
@@ -91,7 +95,7 @@ def blackjack_game():
   user_score = 0
   computer_score = 0
   want_play = True
-  
+
   if input("Do you want to play a game of Blackjack? Type 'y' or 'n': ").lower() == 'n':
     want_play = False
     return
@@ -113,14 +117,14 @@ def blackjack_game():
     
     if want_new_card == 'n':
       
-      while computer_score < 21 and computer_score <= user_score:
+      while computer_score < 17 and not(computer_score == 21 and len(computer_cards) == 2):
         computer_cards.append(random.choice(cards))
         computer_score = score_and_isAce(computer_cards)
       
       print(f"Your final hand: {user_cards}, final score: {user_score}")
       print(f"Computer's final hand: {computer_cards}, final score: {computer_score}")
       
-      win_or_lose(user_score, computer_score)
+      win_or_lose(user_score, computer_score, user_cards, computer_cards)
       blackjack_game()
     elif want_new_card == 'y':
       user_cards.append(random.choice(cards))
@@ -129,18 +133,15 @@ def blackjack_game():
       print(f"Computer's first card: {[computer_cards[0]]}")
 
       if user_score > 21:
-        while computer_score < 21 and computer_score <= user_score:
+        while computer_score < 17 and not(computer_score == 21 and len(computer_cards) == 2):
           computer_cards.append(random.choice(cards))
           computer_score = score_and_isAce(computer_cards)
 
         print(f"Your final hand: {user_cards}, final score: {user_score}")
         print(f"Computer's final hand: {computer_cards}, final score: {computer_score}")
 
-        win_or_lose(user_score, computer_score)
+        win_or_lose(user_score, computer_score, user_cards, computer_cards)
         blackjack_game()
       
       
-
-
-
 blackjack_game()
