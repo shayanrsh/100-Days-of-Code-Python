@@ -10,7 +10,7 @@ Learn Python by building a wide range of exciting projects, from automation scri
 ## What I've Learned 🧠
 Professional Python Programming: I've honed my skills to program in Python professionally, equipping me for a wide range of tasks in the world of software development, using Python 3 - the latest version of Python.
 
-. Automation: I've learned how to automate tasks, making repetitive processes more efficient and allowing me to focus on more important aspects of my work. This includes Python Scripting and Automation.
+- Automation: I've learned how to automate tasks, making repetitive processes more efficient and allowing me to focus on more important aspects of my work. This includes Python Scripting and Automation.
 
 Game Development: I've delved into the world of game development, creating fun and engaging games like Blackjack, Pong, and Snake using Python.
 
