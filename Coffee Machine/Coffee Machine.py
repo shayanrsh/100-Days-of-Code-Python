@@ -58,6 +58,7 @@ def process_coins():
     b. Remember that quarters = $0.25, dimes = $0.10, nickles = $0.05, pennies = $0.01
     c. Calculate the monetary value of the coins inserted. E.g. 1 quarter, 2 dimes, 1 nickel, 2
     pennies = 0.25 + 0.1 x 2 + 0.05 + 0.01 x 2 = $0.52"""
+    print("Please insert coins.")
     quarters = int(input("How many quarters?: "))
     dimes = int(input("How many dimes?: "))
     nickles = int(input("How many nickles?: "))
@@ -112,7 +113,6 @@ def make_coffee(water, milk, coffee, user_input):
 def machine():
     water, milk, coffee, money = ask_user(user_input, MENU)
     if check_resources(water, milk, coffee) == "enough":
-        print("Please insert coins.")
         user_money_input = process_coins()
         if not check_transaction(user_money_input, money)[0]:
             print(check_transaction(user_money_input, money)[1])
