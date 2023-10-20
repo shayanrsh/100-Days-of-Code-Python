@@ -1,11 +1,11 @@
 logo = """
-.------.            _     _            _    _            _    
-|A_  _ |.          | |   | |          | |  (_)          | |   
-|( \/ ).-----.     | |__ | | __ _  ___| | ___  __ _  ___| | __
-| \  /|K /\  |     | '_ \| |/ _` |/ __| |/ / |/ _` |/ __| |/ /
-|  \/ | /  \ |     | |_) | | (_| | (__|   <| | (_| | (__|   < 
-`-----| \  / |     |_.__/|_|\__,_|\___|_|\_\ |\__,_|\___|_|\_\\
-      |  \/ K|                            _/ |                
+.------.            each_name     each_name            each_name    each_name            each_name    
+|A_  each_name |.          | |   | |          | |  (each_name)          | |   
+|( \/ ).-----.     | |__ | | __ each_name  ___| | ___  __ each_name  ___| | __
+| \  /|K /\  |     | 'each_name \| |/ each_name` |/ __| |/ / |/ each_name` |/ __| |/ /
+|  \/ | /  \ |     | |each_name) | | (each_name| | (__|   <| | (each_name| | (__|   < 
+`-----| \  / |     |each_name.__/|each_name|\_each_name,each_name|\___|each_name|\each_name\ |\_each_name,each_name|\___|each_name|\each_name\\
+      |  \/ K|                            each_name/ |                
       `------'                           |__/           
 """
                    
