@@ -21,9 +21,8 @@ while score < 50:
 
     if answer_state == "Exit":
         all_states = data.state.to_list()
-        not_guessed_states = [x for x in all_states if x not in guessed_states]
+        not_guessed_states = [state for state in all_states if state not in guessed_states]
         missing_states = pd.DataFrame(not_guessed_states)
-
         missing_states.to_csv("missing_states.csv")
         break
     if answer_state in data['state'].values:
