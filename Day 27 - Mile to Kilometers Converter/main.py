@@ -31,7 +31,7 @@ result.grid(row=1, column=1)
 
 # Buttons
 def action():
-    to_km = int(entry.get()) * 1.609344
+    to_km = float(entry.get()) * 1.609344
     result.config(text= to_km)
 
 
