@@ -7,7 +7,7 @@ Welcome to my Python programming journey! In this repository, you'll find a coll
 ## 📚 Course Overview:
 Learn Python by building a wide range of exciting projects, from automation scripts to fun games, web applications, data science, and machine learning. This course is an exhilarating Python adventure, designed to turn you into a professional Python programmer.
 
-## What I'm Learning 🧠
+## What I've Learned 🧠
 Professional Python Programming: I've honed my skills to program in Python professionally, equipping me for a wide range of tasks in the world of software development, using Python 3 - the latest version of Python.
 
 - **Automation:** I've learned how to automate tasks, making repetitive processes more efficient and allowing me to focus on more important aspects of my work. This includes Python Scripting and Automation.
