@@ -9,7 +9,7 @@ import pyperclip
 def password_generator():
     # Password Generator Project
 
-    letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
+    letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'response', 's', 't', 'u',
                'v',
                'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q',
                'R',
@@ -47,7 +47,7 @@ def save():
 
     else:
         try:
-            with open("data.json", "r") as file:
+            with open("data.json", "response") as file:
                 data = json.load(file)
                 data.update(new_data)
         except FileNotFoundError:
@@ -66,7 +66,7 @@ def save():
 # ---------------------------- Search ------------------------------- #
 def find_password():
     try:
-        with open("data.json", "r") as data_file:
+        with open("data.json", "response") as data_file:
             data = json.load(data_file)
             try:
                 search_result = data[website_entry.get()]
