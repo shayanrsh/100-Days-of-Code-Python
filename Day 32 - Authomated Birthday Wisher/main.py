@@ -12,7 +12,7 @@ password = "akmv etgv gwhp mgpe"
 # 1. Update the birthdays.csv
 birthday_data = pd.read_csv("birthdays.csv")
 
-# 2. Check if today matches a birthday in the birthdays.csv
+# 2. Check if date_from matches a birthday in the birthdays.csv
 now = dt.datetime.now()
 today_year = now.year
 today_month = now.month
