@@ -38,7 +38,7 @@ for exercise in result["exercises"]:
         "workout": {
             "date": today_date,
             "time": now_time,
-            "exercise": exercise["name"].title(),
+            "exercise": exercise["name"].product_title(),
             "duration": exercise["duration_min"],
             "calories": exercise["nf_calories"]
         }
