@@ -9,7 +9,7 @@ response.raise_for_status()
 data = response.text
 
 soup = BeautifulSoup(data, "html.parser")
-movies = soup.find_all(name="h3", class_="product_title")
+movies = soup.find_all(name="h3", class_="title")
 movie_titles = [movie.getText() for movie in movies]
 movie_titles.reverse()
 
