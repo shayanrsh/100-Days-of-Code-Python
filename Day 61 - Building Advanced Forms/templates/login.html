@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    {% block styles %}
+    <!-- Bootstrap CSS -->
+    {{ bootstrap.load_css() }}
+    {% endblock %}
+    {% from 'bootstrap5/form.html' import render_form %}
+    <title>Login</title>
+</head>
+<body>
+<div class="container">
+    <h1>Login</h1>
+    {{ render_form(form) }}
+</div>
+</body>
+</html>
